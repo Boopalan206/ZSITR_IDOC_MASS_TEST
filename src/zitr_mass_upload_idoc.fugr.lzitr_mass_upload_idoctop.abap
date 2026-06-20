@@ -1,0 +1,3 @@
+FUNCTION-POOL ZITR_MASS_UPLOAD_IDOC.        "MESSAGE-ID ..
+
+* INCLUDE LZITR_MASS_UPLOAD_IDOCD...         " Local class definition

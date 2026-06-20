@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defn for mass upload'
+define service ZSD_MASS_UPLOAD {
+  expose ZI_IDOC_MASS_UPLOAD;
+}

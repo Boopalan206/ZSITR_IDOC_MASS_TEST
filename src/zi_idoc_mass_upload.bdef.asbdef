@@ -1,0 +1,28 @@
+unmanaged implementation in class zbp_i_idoc_mass_upload unique;
+
+define behavior for ZI_IDOC_MASS_UPLOAD
+//lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+
+mapping for ztitr_mass_load {
+ IdocNumber = idoc_number ;
+ Idoctype = idoc_type ;
+ segmentNumber = segment_num;
+ segment = segment;
+ Fields = fields ;
+ Fieldsvalues = field_values;
+ messagetype =  msg_type;
+ message =  msg;
+}
+}
+
+
+
+
+
+

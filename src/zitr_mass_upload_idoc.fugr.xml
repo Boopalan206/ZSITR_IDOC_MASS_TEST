@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for Mass Upload</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZITR_MASS_UPLOAD_IDOCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZITR_MASS_UPLOAD_IDOC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZITR_IDM_F_IDOC_SEGMENTS</FUNCNAME>
+     <SHORT_TEXT>Function Module for Mass Upload</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <TYP>EDILSEGTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <TYP>FIELDNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_IDOC_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDD</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>GT_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEG_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Segment type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_SUB_SEGMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_IDOC_VALUE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
